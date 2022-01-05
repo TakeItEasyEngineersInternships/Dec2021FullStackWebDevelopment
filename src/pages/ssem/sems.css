@@ -1,0 +1,74 @@
+.txtFld {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 25px;
+}
+.cnt2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#note {
+  font-style: italic;
+  font-weight: 100;
+  color: #df1f70;
+}
+.css-button-rounded--rose {
+  height: 55px;
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #df2070;
+  background: #df2070;
+  font-size: 1rem;
+}
+.css-button-rounded--rose:hover {
+  background: #eae9fb;
+  color: #df2070;
+}
+
+.result {
+  width: 50%;
+  margin: 30px;
+  background-color: #d6d2f9;
+  border-radius: 12px;
+  padding-left: 50px;
+  color: #594de5;
+}
+.bt {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  .txtFld {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .result {
+    width: 80%;
+  }
+  .cnt2 {
+    height: 100%;
+  }
+  .bt {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1em;
+  }
+}
