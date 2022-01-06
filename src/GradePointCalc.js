@@ -70,7 +70,8 @@ export function calculateSgpa9(
   cred8,
   sub9,
   cred9
-) {
+) 
+{
   const sum =
     (GradePointCalc(sub1) * cred1) +
     (GradePointCalc(sub2) * cred2) +
@@ -92,7 +93,8 @@ export function cgpacalc(res){
    
    var sum = 0;
    var count = 0;
-   for(let i=0;i<res.length;i++){
+   for(let i=0;i<res.length;i++)
+   {
       if(res[i]!=="0") count++; 
       sum+=Number(res[i]);
    }
