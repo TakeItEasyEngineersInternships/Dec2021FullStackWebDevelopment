@@ -14,7 +14,7 @@ function GradePointCalc(sub) {
   } else if (sub < 45 && sub >= 40) {
     return 4;
   } else if (sub < 40 && sub >= 35) {
-    return "pass";
+    return "pass class";
   } else {
     return 0;
   }
