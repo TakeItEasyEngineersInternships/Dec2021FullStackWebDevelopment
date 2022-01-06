@@ -1,0 +1,78 @@
+.wrapper{
+    height: 100vh;
+   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.heroImg{
+    
+    height: 550px;
+    position: absolute;
+    bottom: 0;
+    right:5%;
+}
+.text{
+    
+    font-size: 1.9rem;
+    color: #8379ec;
+    font-family: "Poppins";
+    width: 50%;
+    
+}
+.btns{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.css-button-rounded--rose {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #df2070;
+    background: #df2070;
+    font-size: 1rem;
+  }
+  .css-button-rounded--rose:hover {
+    background: #0a062d;
+    color: #df2070;
+  }
+
+  @media screen and (max-width: 480px) {
+    .wrapper{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+         
+    }
+     
+     .text{
+         font-size: 1.2rem;
+         text-align: center;
+         width: 100%;
+     }
+     .btns{
+        width: 100%;
+    }
+    
+      
+  }
+  
+  @media screen and (max-width: 890px) {
+    .heroImg{
+        display: none;
+    }
+  }
