@@ -1,0 +1,51 @@
+.sem-wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.heading{
+    color: #8379ec;
+    font-size: 2.3rem;
+}
+.container{
+    height: 100vh;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap:25px;
+    
+}
+
+.card{
+    height: 300px;
+    padding: 10px;
+    background-color: #d6d2f9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02),
+		0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03),
+		0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05);
+        transition: all .2s ease-in-out;
+}
+.card:hover{
+
+   
+    transform: scale(1.1);
+     
+}
+ 
+#sub{
+    color: #df2070;
+    text-align: center;
+}
+
+#lk{
+    text-decoration: none;
+}
+ 
