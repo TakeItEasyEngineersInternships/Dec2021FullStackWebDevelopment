@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152436258-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152436258-1');
+  gtag('event', 'click', {
+  'event_label': 'Calculate',
+  'event_category': 'Calculate Sgpa'
+});
+</script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="google-site-verification" content="MNzal0eBD7OcBcZi6xQjLhd3LjcyEUDJc-i5DmOj5JA" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <meta content="Calculate Semester-V{IT, SGGIE&T} SGPA " name=description>
+  <link rel="stylesheet" href="style.css">
+  <title>SGPA calculator</title>
+</head>
+
+<body>   
+  <div class="container animated swing bounceIn mt-5 mb-3 ">
+    <div class="text-center text-light">
+      <h1>SGPA Calculator</h1>
+      <p>Calculate Semester-V SGPA </p>
+    </div>
+
+    <div id="box" class="mx-auto bg-white px-sm-5 pt-sm-5 pb-sm-1 p-4 mt-3 rounded">
+      <div class="row ">
+        <div class="col-sm-6">
+          <h5>Operating System</h5>
+        </div>
+        <div class="col-sm-3 ">
+          <div class="form-group">
+            <select class="form-control" id='osth'>
+              <option selected="selected">Theory</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-sm-0 mt-1">
+          <div class="form-group">
+            <select class="form-control" id='ospr'>
+              <option selected="selected">Practical</option>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-sm-2 mt-0">
+        <div class="col-sm-6">
+          <h5>Theory Of Computation</h5>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select class="form-control" id='tocth'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-sm-2 mt-0 ">
+        <div class="col-sm-6">
+          <h5>Software Engineering</h5>
+        </div>
+        <div class="col-sm-3 ">
+          <div class="form-group">
+            <select class="form-control" id='seth'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-sm-0 mt-1">
+          <div class="form-group">
+            <select class="form-control" id='sepr'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-sm-2 mt-0">
+        <div class="col-sm-6">
+          <h5>Mathematics-IV</h5>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select class="form-control" id='m4th'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-sm-2 mt-0">
+        <div class="col-sm-6">
+          <h5>Seminar-I</h5>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select class="form-control" id='sempr'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-sm-2 mt-0 ">
+        <div class="col-sm-6">
+          <h5>Database Management System</h5>
+        </div>
+        <div class="col-sm-3 ">
+          <div class="form-group">
+            <select class="form-control" id='dbmsth'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-3 mt-sm-0 mt-1">
+          <div class="form-group">
+            <select class="form-control" id='dbmspr'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-sm-2 mt-0">
+        <div class="col-sm-6">
+          <h5>Computer Laboratory-III</h5>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select class="form-control" id='cl3pr'>
+              <option>A+</option>
+              <option>A</option>
+              <option>B+</option>
+              <option>B</option>
+              <option>C+</option>
+              <option>C</option>
+              <option>D</option>
+              <option>F</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-12">
+          <button id="calculate" class="btn btn-block btn-primary">Calculate</button>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row mt-2  text-center">
+        <div class="col-sm-3">
+          <h1 id="pointer" class="text-primary">
+          </h1>
+        </div>
+        <div class="col-sm-9  text-secondary">
+          <h3 id="message" class="faint-color"></h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer class="text-center bg-light p-2 text-secondary">
+    <a href="https://github.com/vishalibitwar">Hacked by a lowly 7 CG human 🙈</a>
+  </footer>    
+
+    <script src="app.js"></script>
+</body>
+</html>
