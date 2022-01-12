@@ -1,0 +1,27 @@
+.form-label {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #007bff;
+    box-shadow: 1px 0 20px rgb(0 0 0 / 5%);
+}
+
+
+.btn-primary {
+    background-color: #007bff ;
+    border-color: #007bff;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
