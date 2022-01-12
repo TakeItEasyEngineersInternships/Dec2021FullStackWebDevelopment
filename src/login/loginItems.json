@@ -1,0 +1,26 @@
+{
+    "col": "12",
+    "items": [
+        {
+            "id": "username",
+            "label": "Username",
+            "type": "text",
+            "value": "",
+            "required": true
+        },
+        {
+            "id": "password",
+            "label": "Password",
+            "type": "password",
+            "value": "",
+            "required": true
+        },
+        {
+            "id": "login",
+            "type": "button",
+            "label": "Login",
+            "value": "",
+            "buttonType": "submit"
+        }
+    ]
+}
