@@ -1,0 +1,20 @@
+body{
+    background-image: url(https://iammagnus.com/wp-content/uploads/2016/05/website-design-background-1.jpg);
+    background-size: 1550px 700px;
+    
+}
+h1, a{
+    text-align: center;
+    padding: 100px;
+
+}
+
+h1{
+    color: rgb(168, 164, 157);
+}
+
+button {
+    padding: 50px;
+    background-color: rgb(168, 164, 157);
+}
+
